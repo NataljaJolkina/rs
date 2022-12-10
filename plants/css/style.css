@@ -55,6 +55,7 @@ font-family: 'Inter', sans-serif; */
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *, *::before, *::after {
     box-sizing: inherit;
@@ -70,6 +71,14 @@ body {
 .wrapper {
     max-width: 1220px;
     margin: 0 auto;
+}
+
+/* colors */
+.green {
+    color: #499A18;
+}
+.orange {
+    color: #E06733;
 }
 
 
@@ -117,5 +126,55 @@ body {
 /* header styles end */
 
 /* welcome styles start */
-
+.welcome {
+    background-color: #EDF2EC;
+}
+.welcome-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.welcome-img {
+    margin-top: 62px;
+    margin-bottom: 62px;
+}
+.welcome-pic {
+    width: 449px;
+}
+.welcome-h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    color: #717171;
+    width: 550px;
+    margin-top: 98px;
+}
+.welcome-text {
+    width: 526px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: #636060;
+    margin-top: 42px;
+}
+.welcome-button {
+    background-color: #EDF2EC;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    padding: 14px 27px;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+    margin-top: 48px;
+}
+.welcome-button:hover, .welcome-button:focus, .welcome-button:active {
+    background-color: #E06733;
+    color: #FFFFFF;
+    transition: 0.2s;
+    cursor: pointer;
+}
 /* welcome styles end */
