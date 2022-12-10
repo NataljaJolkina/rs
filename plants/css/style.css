@@ -153,7 +153,6 @@ body {
 .welcome-text {
     width: 526px;
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
     font-size: 20px;
     line-height: 35px;
     color: #636060;
@@ -162,8 +161,6 @@ body {
 .welcome-button {
     background-color: #EDF2EC;
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 20px;
     color: #000000;
     padding: 14px 27px;
@@ -178,3 +175,32 @@ body {
     cursor: pointer;
 }
 /* welcome styles end */
+
+/* about styles statr */
+.about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-h2 {
+    font-size: 40px;
+    line-height: 52px;
+    width: 463px;
+    margin-top: 161px;
+}
+.about-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #636060;
+    width: 605px;
+    margin-top: 40px;
+}
+.about-img {
+    margin-top: 93px;
+    margin-bottom: 94px;
+}
+.about-pic {
+    width: 464px;
+}
+/* about styles end */
