@@ -281,3 +281,91 @@ body {
     margin-top: 10px;
 }
 /* service styles end */
+
+/* prices styles start */
+.prices-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.prices-title {
+    margin-top: 38px;
+}
+.prices-h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.prices-dropDown {
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    margin-top: 60px;
+}
+.prices-dropDown-item {
+    width: 250px;
+    height: 50px;
+    background: #EDF2EC;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin: 32px 41px;
+}
+.dd-icon {
+    width: 16px;
+    margin-left: 54px;
+}
+.prices-dd {
+    width: 100px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 40px;
+}
+
+
+.prices-subtitle {
+    margin-top: 38px;
+}
+.prices-h3 {
+    width: 452px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: right;
+}
+.prices-button {
+    margin-top: 38px;
+    text-align: end;
+}
+.prices-btn {
+    width: 162px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733;
+    background-color: #FFFFFF;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+}
+.prices-btn:hover, .prices-btn:focus, .prices-btn:active {
+    color: #FFFFFF;
+    background-color: #E06733;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.prices-img {
+    margin-top: 38px;
+    text-align: end;
+    margin-bottom: 115px;
+}
+.prices-pic {
+    width: 152px;
+    height: 175px;
+}
+/* prices styles end */
