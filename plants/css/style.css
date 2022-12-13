@@ -317,6 +317,10 @@ body {
     align-items: center;
     margin: 32px 41px;
 }
+.prices-dropDown-item:hover, .prices-dropDown-item:focus {
+    background-color: #D6E7D2;
+    transition: 0.2s;
+}
 .dd-icon {
     width: 16px;
     margin-left: 54px;
@@ -414,6 +418,11 @@ body {
     margin-left: 64px;
     margin-top: 148px;
 }
+.contacts-dropDown:hover, .contacts-dropDown:focus, .contacts-dropDown:active {
+    background-color: #C1E698;
+    box-shadow: none;
+    transition: 0.2s;
+}
 .contacts-city {
     width: 204px;
     font-family: 'Inter', sans-serif;
@@ -440,8 +449,6 @@ body {
 .github {
     display: flex;
     align-items: center;
-    /* margin-top: 40px; */
-    
 }
 .gh {
     margin-right: 20px;
@@ -460,9 +467,13 @@ body {
     text-decoration: none;
 }
 
+.social-list {
+    display: flex;
+}
 .social-icons {
     margin-right: 30px;
 }
 .social-icons:last-child {
     margin-right: 0;
 }
+/* footer styles end */
