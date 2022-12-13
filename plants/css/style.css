@@ -113,7 +113,11 @@ body {
     color: #010201;
     text-decoration: none;
 }
-.header-link:hover, .header-link:focus, .header-link:active {
+.header-link:hover {
+    color: #E06733;
+    transition: 0.2s;
+}
+.header-link:active, .header-link:focus {
     font-weight: 700;
     color: #E06733;
     transition: 0.2s;
@@ -425,3 +429,40 @@ body {
     margin-left: 175px;
 }
 /* contacts styles end */
+
+/* footer styles start */
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+.github {
+    display: flex;
+    align-items: center;
+    /* margin-top: 40px; */
+    
+}
+.gh {
+    margin-right: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.rs-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.social-icons {
+    margin-right: 30px;
+}
+.social-icons:last-child {
+    margin-right: 0;
+}
