@@ -71,6 +71,7 @@ body {
 .wrapper {
     max-width: 1220px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 /* colors */
@@ -127,6 +128,15 @@ body {
     color: #000000;
     text-decoration: none;
 }
+
+.header-burger {
+    display: none;
+    position: relative;
+    margin-top: -25px;
+}
+.burger {
+    position: absolute;
+}
 /* header styles end */
 
 /* welcome styles start */
@@ -144,6 +154,7 @@ body {
 }
 .welcome-pic {
     width: 449px;
+    filter: blur(3px);
 }
 .welcome-h1 {
     font-family: 'Inter', sans-serif;
@@ -167,7 +178,9 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 20px;
     color: #000000;
-    padding: 14px 27px;
+    /* padding: 14px 27px; */
+    width: 158px;
+    height: 44px;
     border: 2px solid #E06733;
     border-radius: 10px;
     margin-top: 48px;
@@ -375,6 +388,7 @@ body {
 .prices-pic {
     width: 152px;
     height: 175px;
+    filter: blur(2.5px);
 }
 /* prices styles end */
 
@@ -415,7 +429,7 @@ body {
     height: 50px;
     background: #D6E7D2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 64px;
+    margin-left: 53px;
     margin-top: 148px;
 }
 .contacts-dropDown:hover, .contacts-dropDown:focus, .contacts-dropDown:active {
@@ -477,3 +491,147 @@ body {
     margin-right: 0;
 }
 /* footer styles end */
+
+/* Media start */
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 668px;
+        margin: 0 50px;
+    }
+    /* welcome start */
+    .welcome-wrapper {
+        flex-direction: row-reverse;
+    }
+    .welcome-img {
+        margin-top: 85px;
+    }
+    .welcome-pic {
+        width: 285px;
+        height: 260px;
+    }
+    .welcome-h1 {
+        font-size: 35px;
+        width: 341px;
+        margin-top: 75px;
+    }
+    .welcome-text {
+        font-size: 16px;
+        width: 341px;
+        margin-top: 30px;
+    }
+    .welcome-button {
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+    /* welcome end */
+
+    /* about start */
+    .about-h2 {
+        width: 423px;
+        margin-top: 40px;
+        margin-left: 122px;
+        text-align: center;
+        font-size: 35px;
+        line-height: 46px;
+    }
+    .about-text {
+        width: 668px;
+    }
+    .about-pic {
+        margin-left: 209px;
+        width: 250px;
+        height: 258px;
+    }
+    /* about end */
+
+    /* service start */
+    .service-h2 {
+        font-size: 35px;
+        line-height: 46px;
+    }
+    .service-buttons {
+        display: flex;
+        margin-top: 40px;
+    }
+    .cards-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 100px;
+        grid-row-gap: 38px;
+        margin-top: 40px;
+        padding-bottom: 70px;
+    }
+    .card-pic {
+        width: 280px;
+        height: 350px;
+    }
+    .card-text {
+        width: 201px;
+        margin-left: 40px;
+    }
+    /* service end */
+
+    /* prices start */
+    .prices-h2 {
+        font-size: 35px;
+        line-height: 46px;
+    }
+    .prices-dropDown {
+        margin-top: 50px;
+    }
+    .prices-h3 {
+        font-size: 25px;
+        line-height: 35px;
+        width: 296px;
+        margin-top: 139px;
+    }
+    /* prices end */
+
+    /* contacts start */
+    .contacts-wrapper {
+        flex-direction: column-reverse;
+    }
+    .contacts-title {
+        order: 1;
+        margin-top: 40px;
+        margin-left: 238px;
+    }
+    .contacts-dropDown {
+        margin-top: 100px;
+        margin-left: 109px;
+    }
+    .contacts-img {
+        margin-top: 250px;
+        margin-left: 234px;
+    }
+    .contacts-pic {
+        width: 200px;
+        height: 248.5px;
+    }
+    /* contacts end */
+
+    /* footer start */
+    .footer-wrapper {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .github {
+        margin-left: 247px;
+        margin-top: 32.5px;
+    }
+    .rs {
+        margin-top: -3px;
+        margin-left: 229px;
+    }
+    .social {
+        margin-left: 230px;
+        margin-top: 20px;
+    }
+    .social-icons {
+        margin-right: 25px;
+    }
+    /* footer end */
+}
+
+/* Media end */
