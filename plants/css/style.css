@@ -496,7 +496,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .wrapper {
-        width: 668px;
+        max-width: 668px;
         margin: 0 50px;
     }
     /* welcome start */
@@ -519,6 +519,7 @@ body {
         font-size: 16px;
         width: 341px;
         margin-top: 30px;
+        line-height: 25px;
     }
     .welcome-button {
         margin-top: 30px;
@@ -634,4 +635,214 @@ body {
     /* footer end */
 }
 
+@media screen and (max-width: 380px) {
+    .wrapper {
+        max-width: 330px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    /* header start */
+    .header-wrapper {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+    .header-list {
+        display: none;
+    }
+    .header-burger {
+        display: block;
+        margin-right: 50px;
+    }
+    /* header end */
+
+    /* welcome start */
+    .welcome-img {
+        display: none;
+    }
+    .welcome-h1 {
+        width: 330px;
+        font-size: 25px;
+        line-height: 35px;
+        margin-left: 10px;
+        margin-top: 24px;
+    }
+    .welcome-text {
+        width: 314.52px;
+        margin-left: 10px;
+        margin-top: 20.36px;
+    }
+    .welcome-button {
+        width: 100px;
+        height: 34.14px;
+        font-size: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 24px;
+    }
+    /* welcome end */
+
+    /* about start */
+    .about-h2 {
+        width: 288px;
+        font-size: 25px;
+        line-height: 33px;
+        margin-left: 21px;
+        margin-top: 30px;
+    }
+    .about-text {
+        width: 330px;
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 21.5px;
+    }
+    .about-pic {
+        width: 150px;
+        height: 147px;
+        margin-left: 90px;
+        margin-top: 0;
+    }
+    .about-img {
+        margin: 0;
+        margin-bottom: 31px;
+    }
+    /* about end */
+
+    /* service start */
+    .service-title {
+        margin-top: 30px;
+    }
+    .service-h2 {
+        width: 187px;
+        font-size: 25px;
+        line-height: 33px;
+    }
+    .service-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 121px);
+        grid-column-gap: 10px;
+        grid-row-gap: 9px;
+        margin-top: 35px;
+    }
+    .service-btn {
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .cards-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 27px;
+    }
+    .cards{
+        padding-bottom: 20px;
+        width: 279px;
+        margin-left: 25.5px;
+    }
+    /* service end */
+
+    /* prices start */
+    .prices-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .prices-title {
+        margin-top: 0;
+    }
+    .prices-h2 {
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .prices-dropDown {
+        margin-top: 40px;
+        margin-left: 53px;
+        width: 224px;
+    }
+    .prices-dropDown-item {
+        width: 180px;
+        height: 49.72px;
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+    .prices-dd {
+        width: 89px;
+        margin-left: 30px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .dd-icon{
+        margin-left: 0;
+    }
+    .prices-img {
+        display: none;
+    }
+    .prices-subtitle {
+        margin-top: 19px;
+        margin-left: 50px;
+    }
+    .prices-h3 {
+        width: 230px;
+        text-align: center;
+        margin-top: 0;
+        font-size: 20px;
+    }
+    .prices-button {
+        margin-top: 14px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .prices-btn {
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    /* prices end */
+
+    /* contacts start */
+    .contacts-title {
+        margin-top: 25px;
+        margin-left: 69px;
+        width: 192px;
+    }
+    .contacts-h2 {
+        font-size: 25px;
+        line-height: 33px;
+        text-align: center;
+    }
+    .contacts-dropDown {
+        width: 300px;
+        margin-top: 80px;
+        margin-left: 15px;
+    }
+    .contacts-dd-icon {
+        margin-left: 40px;
+    }
+    .contacts-img {
+        margin-top: 132px;
+        margin-left: 115px;
+    }
+    .contacts-pic {
+        width: 100px;
+        height: 124.25px;
+    }
+    /* contacts end */
+
+    /* footer start */
+    .github {
+        margin-left: 78.5px;
+        margin-top: 22px;
+    }
+    .rs {
+        margin-left: 60px;
+        margin-top: 0;
+    }
+    .social {
+        margin-left: 65px;
+        margin-top: 0;
+    }
+    /* footer end */
+}
 /* Media end */
