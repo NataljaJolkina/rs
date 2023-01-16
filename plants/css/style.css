@@ -69,11 +69,9 @@ body {
     color: #010201;
 }
 .wrapper {
-    max-width: 1220px;
+    max-width: 85%;
     margin: 0 auto;
-    padding: 0 10px;
 }
-
 /* colors */
 .green {
     color: #499A18;
@@ -131,11 +129,32 @@ body {
 
 .header-burger {
     display: none;
+    width: 40px;
+    height: 24px;
     position: relative;
-    margin-top: -25px;
 }
-.burger {
+.burger-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #717171;
     position: absolute;
+    left: 0;
+}
+
+.line-first {
+    top: 0;
+}
+.line-second {
+    top: 35%;
+    transform: translateY(-35%);
+}
+.line-third {
+    top: 70%;
+    transform: translateY(-70%);
+}
+.line-fourth {
+    bottom: 0;
 }
 /* header styles end */
 
@@ -266,7 +285,7 @@ body {
 .cards-wrapper {
     display: grid;
    grid-template-columns: repeat(3, 1fr);
-   grid-column-gap: 117px;
+   grid-column-gap: 9.6%;
    grid-row-gap: 55px;
    margin-top: 90px;
    padding-bottom: 121px;
@@ -275,6 +294,8 @@ body {
     border: 1px solid #E3E1D5;
     border-radius: 20px 20px 20px 20px;
     padding-bottom: 36px;
+    width: 329px;
+    height: 450px;
 }
 .card-pic {
     width: 329px;
@@ -415,7 +436,6 @@ body {
 }
 .contacts-h2 {
     font-family: 'Inika';
-
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
@@ -494,10 +514,11 @@ body {
 
 /* Media start */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
+
     .wrapper {
-        max-width: 668px;
-        margin: 0 50px;
+        max-width: 86%;
+        margin: 0 auto;
     }
     /* welcome start */
     .welcome-wrapper {
@@ -639,19 +660,58 @@ body {
     .wrapper {
         max-width: 330px;
         margin: 0 auto;
-        padding: 0;
     }
     /* header start */
     .header-wrapper {
         padding-top: 36px;
         padding-bottom: 36px;
     }
-    .header-list {
-        display: none;
-    }
     .header-burger {
         display: block;
-        margin-right: 50px;
+        cursor: pointer;
+    }
+    .header-nav {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #EDF2EC;
+        z-index: 10;
+        padding: 75px;
+        transform: translateX(100%);
+        transition: 0.2s all linear;
+    }
+    .header-nav-active {
+        transform: translateX(0);
+    }
+    .header-item {
+        width: 100%;
+        margin-right: 0;
+        font-size: 25px;
+    }
+    .header-nav-close {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+        cursor: pointer;
+    }
+    .close-line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #636060;
+        position: absolute;
+        top: 50%;
+    }
+    .close-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+    .close-line:last-child {
+        transform: translateY(-50%) rotate(-45deg);
     }
     /* header end */
 
