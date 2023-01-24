@@ -283,14 +283,17 @@ body {
 }
 
 .cards-wrapper {
-    display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-column-gap: 9.6%;
-   grid-row-gap: 55px;
-   margin-top: 90px;
-   padding-bottom: 121px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 66px;
+    margin-top: 90px;
+    
 }
 .cards {
+    margin: 0 auto;
+    margin-bottom: 55px;
+    margin-right: 0;
     border: 1px solid #E3E1D5;
     border-radius: 20px 20px 20px 20px;
     padding-bottom: 36px;
@@ -576,13 +579,9 @@ body {
         display: flex;
         margin-top: 40px;
     }
-    .cards-wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 100px;
-        grid-row-gap: 38px;
-        margin-top: 40px;
-        padding-bottom: 70px;
+    .cards {
+        width: 280px;
+        height: 450px;
     }
     .card-pic {
         width: 280px;
@@ -592,6 +591,8 @@ body {
         width: 201px;
         margin-left: 40px;
     }
+
+    
     /* service end */
 
     /* prices start */
