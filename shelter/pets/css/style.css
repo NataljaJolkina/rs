@@ -1,0 +1,104 @@
+body {
+    background-color: #9a9a9a;
+}
+
+.card__button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    margin-top: 30px;
+
+    width: 187px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background-color: #FAFAFA;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(41, 41, 41, 0.6);
+}
+.modal__content {
+    width: 952px;
+}
+.modal__close {
+    float: right;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    padding: 18px 20px;
+}
+.modal__close:hover,
+.modal__close:focus,
+.modal__close:active {
+    background: #FDDCC4;
+    border: 2px solid #FDDCC4;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.modal__wrapper {
+    background: #FAFAFA;
+    border-radius: 9px;
+    height: 500px;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+}
+.modal__title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    margin-top: 50px;
+}
+.modal__sub-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    margin-top: 10px;
+}
+.modal__text {
+    width: 350px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    margin-top: 40px;
+}
+.modal__list {
+    list-style-type: circle;
+    margin-top: 40px;
+}
+.modal__list__item::marker {
+    color: #F1CDB3;
+    background-color: #F1CDB3;
+    font-size: 4px;
+}
+
+.modal__list__item {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #000000;
+    margin-bottom: 11px;
+}
+.modal__bold {
+    font-weight: 700;
+}
