@@ -1,3 +1,6 @@
+
+
+
 // SLIDER START
 
 const sliderLine = document.querySelector('.slider__line');
@@ -7,30 +10,56 @@ const nextButton = document.querySelector('.right');
 let position = 0;
 
 //^ FUNCTIONS
+if(document.documentElement.clientWidth > 768){
+    var nextSlide = () => {
+        if(position < 1800){
+            position += 360;
+        } else {
+            position = 0;
+        }
+        
+        sliderLine.style.left = -position + 'px';
+    };
 
-const nextSlide = () => {
-    if(position < 1800){
-        position += 360;
-    } else {
-        position = 0;
-    }
-    
-    sliderLine.style.left = -position + 'px';
-};
+    var prevSlide = () => {
+        if(position > 0){
+            position -= 360;
+        } else {
+            position = 0;
+        }
+        
+        sliderLine.style.left = -position + 'px';
+    };
 
-const prevSlide = () => {
-    if(position > 0){
-        position -= 360;
-    } else {
-        position = 0;
-    }
-    
-    sliderLine.style.left = -position + 'px';
-};
+    setInterval(() => {
+        nextSlide();
+    }, 4000)
 
-setInterval(() => {
-    nextSlide();
-}, 3000)
+}else if(document.documentElement.clientWidth > 375 && document.documentElement.clientWidth < 769){
+    var nextSlide = () => {
+        if(position < 1550){
+            position += 310;
+        } else {
+            position = 0;
+        }
+        
+        sliderLine.style.left = -position + 'px';
+    };
+
+    var prevSlide = () => {
+        if(position > 0){
+            position -= 310;
+        } else {
+            position = 0;
+        }
+        
+        sliderLine.style.left = -position + 'px';
+    };
+
+    setInterval(() => {
+        nextSlide();
+    }, 4000)
+}
 
 //^ EVENTLISTENERS 
 

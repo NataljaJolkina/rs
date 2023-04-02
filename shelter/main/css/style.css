@@ -77,6 +77,11 @@ body {
     transition: 0.2s;
 }
 
+.active {
+    color: #FAFAFA;
+    border-bottom: 3px solid #F1CDB3;
+}
+
 .header__nav__item {
     margin-right: 35px;
 }
@@ -144,6 +149,11 @@ body {
     transition: 0.4s;
 }
 /* ~ START CONTENT END */
+
+.start__img {
+    width: 698px;
+    height: 728px;
+}
 /* START END */
 
 /* ABOUT START */
@@ -320,6 +330,11 @@ body {
 .modal__content {
     width: 952px;
 }
+.modal__img {
+    width: 500px;
+    height: 500px;
+    border-radius: 9px 0px 0px 9px;;
+}
 .modal__close {
     float: right;
     border: 2px solid #F1CDB3;
@@ -438,7 +453,7 @@ body {
     margin-bottom: 100px;
 }
 .help__title {
-    width: 308px;
+    width: 315px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
     font-size: 35px;
@@ -627,3 +642,111 @@ body {
 }
 /* ~ LOCATION END */
 /* FOOTER END */
+
+
+/* MEDIA START */
+/* ~ 768px LAYOUT START */
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        max-width: 708px;
+        margin: 0 auto;
+    }
+
+    /* START SCREEN START */
+    .start__wrapper {
+        flex-direction: column;
+    }
+    .start__button {
+        margin-left: 100px;
+    }
+    .start__img {
+        margin-top: 100px;
+        margin-left: 139px;
+        width: 569px;
+        height: 593px;
+    }
+    
+    /* START SCREEN END */
+
+    /* ABOUT START */
+    .about__wrapper {
+        flex-direction: column-reverse;
+    }
+    .about__pic {
+        margin-top: 80px;
+    }
+    /* ABOUT END */
+
+    /* PETS START */
+    .slider__wrapper {
+        width: 600px;
+    }
+    .slider__item {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .left {
+        margin-right: 12px;
+    }
+    .right {
+     margin-left: 12px;   
+    }
+
+    .modal__wrapper {
+        width: 630px;
+        height: 350px;
+    }
+    .modal__close {
+        float: none;
+        width: 55px;
+        margin-left: 620px;
+    }
+    .modal__content  {
+        left: 68%;
+        top: 75%;
+    }
+    .modal__img {
+        width: 350px;
+        height: 350px;
+    }
+    .modal__info {
+        margin-left: 11px;
+    }
+    .modal__title {
+        margin-top: 10px;
+    }
+    .modal__text {
+        font-size: 13px;
+        margin-top: 20px;
+        width: 260px;
+    }
+    .modal__list__item {
+        margin-bottom: 6px;
+    }
+    /* PETS END */
+
+    /* HELP START */
+    .help__grid {
+        width: 650px;
+    }
+    /* HELP END */
+
+    /* DONATION START */
+    .donation__wrapper {
+        flex-direction: column-reverse;
+    }
+    .donation__pic {
+        margin-bottom: 100px;
+    }
+    /* DONATION END */
+
+    /* FOOTER START */
+    .footer__wrapper {
+        justify-content: center;
+    }
+    /* FOOTER END */
+}
+
+/* ~ 768px LAYOUT END */
+/* MEDIA END */
