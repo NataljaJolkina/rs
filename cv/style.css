@@ -1,0 +1,145 @@
+
+body {
+    background-color: #181616;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+/* colors */
+.white {
+    color: white;
+}
+.grey {
+    color: #696969;
+}
+.green {
+    color: #3DFFDB;
+}
+.blue {
+    color: #0094FF;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+.my-img {
+    margin-top: 90px;
+    margin-left: 50px;
+}
+.html {
+    font-size: 35px;
+    line-height: 35px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+.html2 {
+    font-size: 35px;
+    line-height: 35px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.nj {
+    font-size: 48px;
+    margin-top: 12px;
+    margin-left: 60px;
+}
+.title {
+    margin-left: 60px;
+    font-size: 24px;
+    margin-top: -20px;
+}
+.front {
+    font-size: 24px;
+}
+.body {
+    font-size: 23px;
+    margin-top: -20px;
+    margin-left: 60px;
+}
+.body2 {
+    font-size: 23px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.ab {
+    font-size: 24px;
+    margin-left: -30px;
+    margin-top: 15px;
+}
+.about {
+    margin-left: 120px;
+}
+.contact {
+    margin-left: 90px;
+    font-size: 24px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.cont {
+    margin-left: 30px;
+    font-size: 15px;
+}
+.skills {
+    margin-left: 150px;
+}
+.skill {
+    margin-left: -60px;
+    font-size: 24px;
+}
+.ul {
+    margin-left: -30px;
+}
+
+.co {
+    font-size: 24px;
+    margin-left: 90px;
+}
+.example {
+    line-height: 30px;
+    margin-left: 120px;
+}
+
+.code-red {
+    color: #cf222e;
+}
+.code-purple {
+    color: #8250df;
+}
+.code-blue {
+    color: #0550ae;
+}
+.code-dark {
+    color: #3DFFDB;
+}
+
+.ex {
+    font-size: 24px;
+    margin-left: 90px;
+}
+.ex-text {
+    margin-left: 120px;
+}
+
+.language {
+    margin-left: 90px;
+}
+.lang {
+    font-size: 24px;
+}
+.lang-ul {
+    margin-left: 30px;
+}
+.lang-li {
+    margin-left: 60px;
+}
